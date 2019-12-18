@@ -6,15 +6,15 @@ namespace basics
 template<typename T>
 struct Node
 {
-    T* data;
-    Node* next;
+    T* Data;
+    Node* Next;
 };
 
 template<typename T>
 struct DNode
 {
-    T* data;
-    DNode* next;
+    T* Data;
+    DNode* Next;
     DNode* prev;
 };
 

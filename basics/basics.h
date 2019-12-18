@@ -6,7 +6,7 @@ namespace basics
 {
     
     // 欧几里得算法， q是0最大公约数为p
-    int gcd(int p, int q)
+    inline int gcd(int p, int q)
     {
         if (q == 0) {
             return p;
