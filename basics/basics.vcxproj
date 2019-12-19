@@ -154,16 +154,30 @@
   <ItemGroup>
     <ClInclude Include="..\LinearDataStructures\linear_structures.h" />
     <ClInclude Include="..\LinearDataStructures\singly_list.h" />
+    <ClInclude Include="..\NonLinearStructures\binary_search_tree.h" />
+    <ClInclude Include="..\NonLinearStructures\binary_tree.h" />
+    <ClInclude Include="..\NonLinearStructures\n_ary_tree.h" />
     <ClInclude Include="linked_list.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basics.h" />
     <ClCompile Include="main.cpp" />
     <None Include="..\LinearDataStructures\README.md" />
+    <None Include="..\NonLinearStructures\README.md" />
     <None Include="basics.md">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <FileType>Document</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\NonLinearStructures\bst.png" />
+    <Image Include="..\NonLinearStructures\del.png" />
+    <Image Include="..\NonLinearStructures\del1.png" />
+    <Image Include="..\NonLinearStructures\del2.png" />
+    <Image Include="..\NonLinearStructures\file.png" />
+    <Image Include="..\NonLinearStructures\image\avl.png" />
+    <Image Include="..\NonLinearStructures\image\t.png" />
+    <Image Include="..\NonLinearStructures\insert.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

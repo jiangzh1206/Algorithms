@@ -4,6 +4,9 @@
     <Filter Include="1.LinearStructures">
       <UniqueIdentifier>{c83330fb-b801-4d40-a1c8-a7c93c394612}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2.NonLinearStructures">
+      <UniqueIdentifier>{6b8b7110-6b1a-43ef-b425-9c27a0e8c551}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linked_list.h" />
@@ -12,6 +15,15 @@
     </ClInclude>
     <ClInclude Include="..\LinearDataStructures\singly_list.h">
       <Filter>1.LinearStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NonLinearStructures\binary_search_tree.h">
+      <Filter>2.NonLinearStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NonLinearStructures\binary_tree.h">
+      <Filter>2.NonLinearStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\NonLinearStructures\n_ary_tree.h">
+      <Filter>2.NonLinearStructures</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -23,5 +35,18 @@
     <None Include="..\LinearDataStructures\README.md">
       <Filter>1.LinearStructures</Filter>
     </None>
+    <None Include="..\NonLinearStructures\README.md">
+      <Filter>2.NonLinearStructures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\NonLinearStructures\file.png" />
+    <Image Include="..\NonLinearStructures\bst.png" />
+    <Image Include="..\NonLinearStructures\insert.png" />
+    <Image Include="..\NonLinearStructures\del.png" />
+    <Image Include="..\NonLinearStructures\del1.png" />
+    <Image Include="..\NonLinearStructures\del2.png" />
+    <Image Include="..\NonLinearStructures\image\t.png" />
+    <Image Include="..\NonLinearStructures\image\avl.png" />
   </ItemGroup>
 </Project>
