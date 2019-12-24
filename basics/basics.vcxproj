@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -92,6 +92,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>E:\vcpkg\vcpkg-2019.11\installed\x86-windows\include;E:\JZH\数据结构\Algorithms\mapreduce\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -115,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -124,6 +125,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,30 +156,28 @@
   <ItemGroup>
     <ClInclude Include="..\LinearDataStructures\linear_structures.h" />
     <ClInclude Include="..\LinearDataStructures\singly_list.h" />
+    <ClInclude Include="..\Lookup\bloom_filter.h" />
+    <ClInclude Include="..\Lookup\hash_map.h" />
     <ClInclude Include="..\NonLinearStructures\binary_search_tree.h" />
     <ClInclude Include="..\NonLinearStructures\binary_tree.h" />
+    <ClInclude Include="..\NonLinearStructures\graph.h" />
     <ClInclude Include="..\NonLinearStructures\n_ary_tree.h" />
     <ClInclude Include="linked_list.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Lookup\binary_search.h" />
+    <ClCompile Include="..\Lookup\linear_time_select.h" />
+    <ClCompile Include="..\Lookup\merge_sort.h" />
+    <ClCompile Include="..\Lookup\quick_sort.h" />
     <ClCompile Include="basics.h" />
     <ClCompile Include="main.cpp" />
     <None Include="..\LinearDataStructures\README.md" />
+    <None Include="..\Lookup\README.md" />
     <None Include="..\NonLinearStructures\README.md" />
     <None Include="basics.md">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <FileType>Document</FileType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\NonLinearStructures\bst.png" />
-    <Image Include="..\NonLinearStructures\del.png" />
-    <Image Include="..\NonLinearStructures\del1.png" />
-    <Image Include="..\NonLinearStructures\del2.png" />
-    <Image Include="..\NonLinearStructures\file.png" />
-    <Image Include="..\NonLinearStructures\image\avl.png" />
-    <Image Include="..\NonLinearStructures\image\t.png" />
-    <Image Include="..\NonLinearStructures\insert.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

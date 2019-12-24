@@ -7,9 +7,11 @@
     <Filter Include="2.NonLinearStructures">
       <UniqueIdentifier>{6b8b7110-6b1a-43ef-b425-9c27a0e8c551}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3.Lookup">
+      <UniqueIdentifier>{f3104ce0-74df-4406-982b-faca0033bf38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="linked_list.h" />
     <ClInclude Include="..\LinearDataStructures\linear_structures.h">
       <Filter>1.LinearStructures</Filter>
     </ClInclude>
@@ -25,11 +27,32 @@
     <ClInclude Include="..\NonLinearStructures\n_ary_tree.h">
       <Filter>2.NonLinearStructures</Filter>
     </ClInclude>
+    <ClInclude Include="..\NonLinearStructures\graph.h">
+      <Filter>2.NonLinearStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lookup\hash_map.h">
+      <Filter>3.Lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lookup\bloom_filter.h">
+      <Filter>3.Lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="linked_list.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basics.h" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="basics.md" />
+    <ClCompile Include="..\Lookup\binary_search.h">
+      <Filter>3.Lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lookup\merge_sort.h">
+      <Filter>3.Lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lookup\quick_sort.h">
+      <Filter>3.Lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lookup\linear_time_select.h">
+      <Filter>3.Lookup</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LinearDataStructures\README.md">
@@ -38,15 +61,9 @@
     <None Include="..\NonLinearStructures\README.md">
       <Filter>2.NonLinearStructures</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\NonLinearStructures\file.png" />
-    <Image Include="..\NonLinearStructures\bst.png" />
-    <Image Include="..\NonLinearStructures\insert.png" />
-    <Image Include="..\NonLinearStructures\del.png" />
-    <Image Include="..\NonLinearStructures\del1.png" />
-    <Image Include="..\NonLinearStructures\del2.png" />
-    <Image Include="..\NonLinearStructures\image\t.png" />
-    <Image Include="..\NonLinearStructures\image\avl.png" />
+    <None Include="..\Lookup\README.md">
+      <Filter>3.Lookup</Filter>
+    </None>
+    <None Include="basics.md" />
   </ItemGroup>
 </Project>

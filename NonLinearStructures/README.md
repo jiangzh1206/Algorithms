@@ -55,6 +55,9 @@ delete:
 ***
 
 #### Graphs
-
+unweighted/weighted graph: 未加权/加权图  
+undirected/directed graph: 无向/有向图  
+邻接矩阵（Adjacency Matrix）是表示顶点之间相邻关系的矩阵。  
+邻接表（Adjacency List）存储方法跟树的孩子链表示法相类似，是一种顺序分配和链式分配相结合的存储结构
 
 
